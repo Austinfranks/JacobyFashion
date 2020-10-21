@@ -1,0 +1,25 @@
+Create a modern fashion brand ecommerce site
+- Add a login capability
+- A check out feature
+- Create a backend with mongodb that stores user information
+
+V1 Req
+- Create app
+- Create a routing system using react router
+
+V2 Req 
+- Remeber to attach a screen minimum width to 250px
+- Create Stripe server side store enable client only integration to create app without server side component
+- Edit clothing in Gimp to give a transperent background
+
+V3 Req
+- Remeber to dot env the stripe token in viewcart
+- Remeber to come back and creat sucess and failure payment pages*********
+- Create Stripe check out button functionailty 
+
+V4 Req
+- Create login page
+- Create a login authenication and registration using mysql
+- Create database and table in mysql jfloginsystem
+- Create a post method in express backend
+- Use axios to make http request
