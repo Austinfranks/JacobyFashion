@@ -14,7 +14,7 @@ export default function Login() {
 
   // Function that sends info to backend which is than inserted into a database
   const register = () => {
-    Axios.post("http://localhost:3001/register", {
+    Axios.post("http://localhost:3001/login", {
       username: usernameReg,
       password: passwordReg,
     }).then((response) => {

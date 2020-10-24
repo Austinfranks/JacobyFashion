@@ -117,6 +117,7 @@ const Styles = styled.div`
 
 .brand {
     margin-top: 10vh;
+    margin-bottom:20vh;
     text-align: center;
 }
 .brand h1 {
@@ -192,6 +193,8 @@ const Home = () => (
         <h1> JACOBY FASHION</h1>
         <p>~ STRIVE FOR GREATNESS JUST LIKE JACOBY ~</p>
     </section>
+
+
   </Styles>
 );
 

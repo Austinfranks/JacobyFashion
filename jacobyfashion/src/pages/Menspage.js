@@ -7,15 +7,13 @@ import styled from "styled-components";
 const Styles = styled.div`
   .mainbox2 {
     height: 90vh;
-    transition: 1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .subbox2 {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
+text-align:center;
   }
   .subbox2 div {
     padding-top: 0.5em;
@@ -23,14 +21,14 @@ const Styles = styled.div`
   }
 
   .name {
-    font-size: 2em;
+    font-size: 16px;
   }
 
   button {
     border-radius: 5px;
-    background-color: red;
+    background: lightgrey;
     padding: 5px 12px;
-    color: whitesmoke;
+    color: black;
     border: none;
 
     -webkit-transition-duration: 0.4s;
@@ -39,10 +37,9 @@ const Styles = styled.div`
   }
 
   button:hover {
-    background-color: limegreen;
+    background-color: blueviolet;
     color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
+
   }
 
   @media (max-width: 600px) {
@@ -76,8 +73,7 @@ export default function Mens() {
               <img
                 src={`/images/${lineItem.price}.png`}
                 alt={lineItem.name}
-                width={100}
-                height={100}
+                height={300}
               />
             </div>
 

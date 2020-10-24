@@ -6,7 +6,8 @@ import styled from "styled-components";
 const Styles = styled.div`
 
 .footer {
-margin-top: 10vh;
+  position:fixed;
+  bottom:0;
 width: 100%;
 height: 10vh;
 display:flex;

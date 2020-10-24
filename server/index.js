@@ -11,15 +11,16 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+// DOT ENV PASSWRD
 const db = mysql.createConnection({
   user: "root",
   host: "localhost",
   password: "password",
-  database: "jflogin",
+  database: "jfloginsystem",
 });
 
 // Makes a query to the database
-app.post("/register", (req, res) => {
+app.post("/login", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
