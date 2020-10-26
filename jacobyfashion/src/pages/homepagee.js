@@ -39,13 +39,29 @@ const Styles = styled.div`
 .button {
   text-decoration:none;
   text-align:center;
-  background: lightgrey;
   color: black;
   font-size:16px;
   width: 150px;
   padding:10px;
   border-radius: 5px;
 }
+
+.button {
+    border-radius: 5px;
+    background: lightgrey;
+    color: black;
+    border: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: blueviolet;
+    color: white;
+
+  }
 
 .img2title {
     font-size: 32px;

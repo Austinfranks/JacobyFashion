@@ -20,7 +20,7 @@ const db = mysql.createConnection({
 });
 
 // Makes a query to the database
-app.post("/login", (req, res) => {
+app.post("/register", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
@@ -32,6 +32,29 @@ app.post("/login", (req, res) => {
     }
   );
 });
+
+app.post("/login", (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  db.query(
+    "SELECT * FROM users WHERE username = ? AND password = ?",
+    [username, password],
+    (err, result) => {
+      if (err) {
+        // FRONT end espects an object, send to fornt end the error so we dont have to worry about writing an else statement
+        res.send({err:err})
+      }
+
+        if (result.length > 0) {
+          res.send(result)
+        } else {
+          res.send({message:"Wrong username/password combination!"})
+        }
+      
+    }
+  );
+})
 
 app.listen(3001, () => {
   console.log("running server");

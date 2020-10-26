@@ -7,8 +7,9 @@ import { CartContext } from "../cart/context";
 const Styles = styled.div`
   button {
     border-radius: 5px;
-    background-color: grey;
-    color: white;
+    background: lightgrey;
+    padding: 5px 12px;
+    color: black;
     border: none;
 
     -webkit-transition-duration: 0.4s;
@@ -17,10 +18,9 @@ const Styles = styled.div`
   }
 
   button:hover {
-    background-color: black;
+    background-color: blueviolet;
     color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
+
   }
 
   .mainbox2 {
