@@ -5,6 +5,84 @@ import { Link } from "react-router-dom";
 
 
 const Styles = styled.div`
+  .main {
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .registration {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+  }
+  .registration label {
+    font-size:16px;
+    margin-top: 10px;
+  }
+
+  .registration input {
+    width: 250px;
+  }
+
+  .registration button {
+    margin-top: 10px;
+    border-radius: 5px;
+    background: lightgrey;
+    padding: 5px 12px;
+    color: black;
+    border: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .registration button:hover {
+    background-color: blueviolet;
+    color: white;
+
+  }
+
+  .login {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+        margin-top: 10px;
+
+
+  }
+
+  .login label {
+    font-size:16px;
+    margin-top: 10px;
+
+  }
+
+  .login input {
+    width: 250px;
+  }
+
+  .login button {
+    margin-top: 10px;
+    border-radius: 5px;
+    background: lightgrey;
+    padding: 5px 12px;
+    color: black;
+    border: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .login button:hover {
+    background-color: blueviolet;
+    color: white;
+
+  }
   @media only screen and (max-width: 400px) {
   }
 `;
@@ -49,7 +127,7 @@ export default function Login() {
 
   return (
     <Styles>
-      <div className="">
+      <div className="main">
         <div className="registration">
           <h1>Registration</h1>
           <label>UserName</label>
